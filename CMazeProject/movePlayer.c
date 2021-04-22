@@ -66,8 +66,13 @@ int movePlayer()
 			break;
 		}
 		default:
-			break;
+			break   ;
 		}
+
+
+
+
+
 
 
 		system("cls");
