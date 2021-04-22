@@ -40,28 +40,28 @@ int movePlayer()
 		case 'a':
 		case 'A':
 		{
-			if (locationY > 0 &&  arr[locationY - 1][locationX]  != '#')
+			if (locationY > 0 &&  arr[locationX][locationY - 1]  != '#')
 				locationY--;
 			break;
 		}
 		case 's':
 		case 'S':
 		{
-			if (locationX < 4 && arr[locationY][locationX + 1] != '#')
+			if (locationX < 4 && arr[locationX + 1][locationY] != '#')
 				locationX++;
 			break;
 		}
 		case 'd':
 		case 'D':
 		{
-			if (locationY < 4 && arr[locationY + 1][locationX] != '#')
+			if (locationY < 4 && arr[locationX][locationY + 1] != '#')
 				locationY++;
 			break;
 		}
 		case 'w':
 		case 'W':
 		{
-			if (locationX > 0 && arr[locationY][locationX - 1] != '#')
+			if (locationX > 0 && arr[locationX - 1][locationY] != '#')
 				locationX--;
 			break;
 		}
